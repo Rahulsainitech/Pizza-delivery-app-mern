@@ -20,10 +20,10 @@ app.use("/api/users",require("./routes/userRoute"))
 app.use("/api/orders",require("./routes/orderRoute"))
 
 if(process.env.NODE_ENV==="production"){
-    app.use(express.static('client/build'))
+    app.use(express.static('clients/build'))
     const path = require('path')
     app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'client','build','index.html'))
+        res.sendFile(path.resolve(__dirname,'clients','build','index.html'))
     })
 }else{
     app.get("/",(req,res)=>{

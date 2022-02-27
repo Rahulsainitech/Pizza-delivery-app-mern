@@ -13,7 +13,7 @@
     "clients": "npm start --prefix clients",
     "dev": " concurrently \"npm run server\" \"npm run clients\"",
     "data:import": "node seeder.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix clients && npm run build --prefix clients"
   },
   "author": "Rahul saini",
   "license": "MIT",
