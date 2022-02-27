@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,500&family=Redressed&family=Roboto+Mono:wght@100;300;400;500&family=Shizuru&display=swap');
+@mixin flexprop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter{
+    padding:3rem;
+    background-color: rgb(250, 247, 244);
+}
+.navbar1{
+    background-color: rgb(202, 186, 166);
+}
+.home{
+    min-height: 80vh;
+    // margin-top: 2rem;
+   .homerow{
+    @include flexprop();
+    margin: auto;
+    // flex-wrap: wrap;
+   }
+}
+.login{
+    min-height: 90vh;
+    @include flexprop();
+    form{
+    border: 1px solid green;
+    padding: 3rem;
+    background-color: rgb(65,62,62);
+    color: white !important;
+    border-radius: 5px ;
+    }
+}
+.register{
+    @include flexprop();
+    min-height: 80vh;
+    .card{
+        background-color: rgb(65, 62, 62);
+        color: white;
+        width: 36rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+.about{
+    p{
+        font-family: 'Nunito', sans-serif; 
+        font-size: 20px;
+        color:rgb(44, 42, 42);
+        font-weight: 600;
+    }
+    margin-top: 2rem;
+    background-color:rgb(240, 233, 233);
+    .card{
+        margin-top: 1rem;
+        img{
+            transition: .3s;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.25)
+            }
+        }
+         overflow: hidden;
+    }
+    h1 ,h2{
+        font-family: 'Nunito', sans-serif;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding:.5rem 0;
+        display: block;
+        // text-align: center;
+        // background-color: antiquewhite;
+        // border: 1px solid rgb(228, 144, 18);
+        border-radius: 10px;
+    }
+    .chief{
+        text-align: center;
+        padding: .7rem;
+        margin: 2rem 0;
+        background-color: antiquewhite;
+        border: 1px solid rgb(228, 144, 18);
+        border-radius: 15px;
+    }
+    .img{
+        img{
+            height: 100%;
+            width: 100%;
+            transition: transform .4s;
+            &:hover{
+                transform: scale(1.5)
+                
+            }
+        }
+        overflow: hidden;
+    }
+}
+.contact{
+    @include flexprop();
+    min-height: 93vh;
+    // margin-top:3rem;
+    font-family: 'Nunito', sans-serif;
+    h2{
+        font-weight: 600;
+    border: 1px solid rgb(167, 161, 161);
+    padding: .5rem 0;
+    background-color: rgb(223, 200, 245);
+    }
+    p{
+        font-weight: 800;
+        font-size: 20px;
+        background-color:rgb(245, 242, 248); ;
+    }
+    .img{
+        img{
+            transition:1s;
+            // border-radius: 50%;
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+        overflow: hidden;
+    }
+}
