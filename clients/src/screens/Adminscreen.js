@@ -17,8 +17,8 @@ const Adminscreen = ({ history }) => {
   useEffect(() => {
     if (localStorage.getItem("currentUser") === null || !currentUser.isAdmin) {
       swal("Either you are not login or you do not have admin access");
+      window.location.href = "/";
     }
-    window.location.href = "/";
   }, [currentUser]);
 
   return (
