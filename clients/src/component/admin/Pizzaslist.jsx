@@ -24,7 +24,7 @@ const Pizzaslist = () => {
         <Error error={"Error while loading page :" + error} />
       ) : (
         <>
-          <Table striped bordered hover size="sm">
+          <Table striped bordered hover size="sm" responsive>
             <thead>
               <tr>
                 <th>Sr/no</th>

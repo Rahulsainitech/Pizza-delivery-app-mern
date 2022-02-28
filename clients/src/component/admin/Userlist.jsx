@@ -19,7 +19,7 @@ const Userlist = () => {
     <>
       {error && <Error error={"error while loading users :" + error} />}
       {loading && <Loader />}
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive>
         <thead>
           <tr>
             <th>User Id</th>

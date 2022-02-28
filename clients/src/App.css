@@ -5,11 +5,37 @@
   background-color: #faf7f4;
 }
 
+.button-grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brand1 {
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2.5rem;
+  left: 1rem;
+  z-index: 3;
+}
+
+@media screen and (max-width: 400px) {
+  .brand1 {
+    left: 0;
+    top: 2.5rem;
+    margin-left: 0px;
+    height: 80px;
+  }
+}
+
 .navbar1 {
   background-color: #cabaa6;
+  margin-top: 3.5rem;
 }
 
 .home {
+  margin-top: 2rem;
   min-height: 80vh;
 }
 
@@ -57,7 +83,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .register .card {
@@ -142,7 +168,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 93vh;
+  margin-top: 3rem;
   font-family: 'Nunito', sans-serif;
 }
 

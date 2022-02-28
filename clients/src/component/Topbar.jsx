@@ -5,13 +5,15 @@ import { MdLocalOffer } from "react-icons/md";
 const Topbar = () => {
   return (
     <>
-      <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" >
+      <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" >
         <Container fluid>
-          <h6 className="text-light"><MdLocalOffer className="text-warning"/>&nbsp;&nbsp;
+          
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+         
+          <Navbar.Collapse id="responsive-navbar-nav">
+          <h6 className="text-light text-truncate"><MdLocalOffer className="text-warning"/>&nbsp;&nbsp;
             Free Home delievry on order Above 500/-Rupees
           </h6>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <LinkContainer activeClassName to="/">
               <Nav.Link>Home</Nav.Link>
@@ -24,6 +26,9 @@ const Topbar = () => {
             </LinkContainer>
             <LinkContainer activeClassName to="/terms&policy">
               <Nav.Link>Terms and policy</Nav.Link>
+            </LinkContainer> 
+            <LinkContainer activeClassName to="/admin">
+              <Nav.Link>Admin</Nav.Link>
             </LinkContainer> 
           </Nav></Navbar.Collapse>
         </Container>

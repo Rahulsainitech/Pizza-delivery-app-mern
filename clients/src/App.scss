@@ -9,10 +9,29 @@
     padding:3rem;
     background-color: rgb(250, 247, 244);
 }
+.button-grp{
+display: flex;
+}
+.brand1{
+    height:100px;
+    position:sticky;
+    top:2.5rem;
+    left:1rem;
+    z-index: 3;
+    @media screen and (max-width:400px) {
+        left:0;
+        top: 2.5rem;
+        margin-left: 0px;
+        height: 80px;
+        
+    }
+}
 .navbar1{
     background-color: rgb(202, 186, 166);
+    margin-top: 3.5rem;
 }
 .home{
+    margin-top: 2rem;
     min-height: 80vh;
     // margin-top: 2rem;
    .homerow{
@@ -34,7 +53,7 @@
 }
 .register{
     @include flexprop();
-    min-height: 80vh;
+    min-height: 90vh;
     .card{
         background-color: rgb(65, 62, 62);
         color: white;
@@ -98,8 +117,8 @@
 }
 .contact{
     @include flexprop();
-    min-height: 93vh;
-    // margin-top:3rem;
+    // min-height: 93vh;
+    margin-top:3rem;
     font-family: 'Nunito', sans-serif;
     h2{
         font-weight: 600;

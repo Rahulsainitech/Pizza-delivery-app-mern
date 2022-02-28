@@ -12,11 +12,9 @@ const Navbar1 = () => {
   const { currentUser } = userState;
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="navbar1" variant="light">
+            <Image src="images/png1234.png" className="brand1"  />
+      <Navbar  className="navbar1" variant="light" fixed="top" style={{zIndex:2}}>
         <Container>
-          <Navbar.Brand href="#home">
-            <Image src="images/png1234.png" style={{height:"60px",width:"100%"  }} />
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">

@@ -65,31 +65,31 @@ const AddNewPizzs = () => {
           </Form.Group>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridCity">
-              <Form.Label>Small Size</Form.Label>
+              <Form.Label>Small</Form.Label>
               <Form.Control
                 type="text"
                 value={smallPrice}
                 onChange={(e) => setsmallPrice(e.target.value)}
-                placeholder="Enter Price"
+                placeholder="Price"
               />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>medium size</Form.Label>
+              <Form.Label>medium</Form.Label>
               <Form.Control
                 type="text"
                 value={mediumPrice}
                 onChange={(e) => setmediumPrice(e.target.value)}
-                placeholder="Enter Price"
+                placeholder="Price"
               />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridZip">
-              <Form.Label>Large Size</Form.Label>
+              <Form.Label>Large</Form.Label>
               <Form.Control
                 value={largePrice}
                 onChange={(e) => setlargePrice(e.target.value)}
-                placeholder="Enter Price"
+                placeholder="Price"
               />
             </Form.Group>
           </Row>

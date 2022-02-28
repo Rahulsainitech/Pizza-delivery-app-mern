@@ -11,13 +11,13 @@ const Filter = () => {
     <div className="p-4 filter">
       <Form>
         <Row>
-          <Col>
+          <Col xs={7}>
             <Form.Control 
             value={searchKey}
             onChange={(e)=>setSearchkey(e.target.value)}
             placeholder="Search Pizza...." />
           </Col>
-          <Col>
+          <Col xs={3}>
            <select className="form-select" value={category}
             onChange={(e)=>setCategory(e.target.value)}>
                <option selected>ALL</option>
@@ -25,7 +25,7 @@ const Filter = () => {
                <option>nonveg</option>
            </select>
           </Col>
-          <Col><Button onClick={()=>dispatch(filterPizza(searchKey,category))}>Search</Button></Col>
+          <Col xs={2}><Button className="btn-sm" onClick={()=>dispatch(filterPizza(searchKey,category))}>Search</Button></Col>
         </Row>
       </Form>
     </div>
