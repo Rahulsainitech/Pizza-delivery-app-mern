@@ -3,6 +3,7 @@ const dotenv=require("dotenv")
 const connectDB = require("./config/config");
 const morgan = require("morgan")
 const app = express()
+const cors=require('cors')
 
 //config dotenv
 dotenv.config()
@@ -11,6 +12,7 @@ dotenv.config()
 connectDB()
 
 // middleware
+app.use(cors())
 app.use(express.json())
 app.use(morgan("dev"))
 
